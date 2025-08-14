@@ -1,0 +1,35 @@
+# Node modules (install di container)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Git folder
+.git
+.gitignore
+
+# Env files
+.env
+.env.*.local
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Build cache / output
+.build
+.next
+.cache
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Jangan ignore database agar persist
+# data/data.db
