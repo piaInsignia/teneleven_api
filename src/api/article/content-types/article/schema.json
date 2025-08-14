@@ -55,6 +55,12 @@
         "videos",
         "audios"
       ]
+    },
+    "user_downloads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-download.user-download",
+      "mappedBy": "article"
     }
   }
 }
