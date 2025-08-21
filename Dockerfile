@@ -7,13 +7,13 @@ WORKDIR /app
 # Copy dependency files
 COPY package.json package-lock.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies (termasuk pg)
+RUN npm install --production
 
 # Copy seluruh project
 COPY . .
 
-# Build Strapi
+# Build Strapi (hanya di production stage)
 RUN npm run build
 
 # Expose Strapi default port
